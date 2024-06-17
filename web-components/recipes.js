@@ -48,7 +48,6 @@ export class Recipes extends LitElement {
 
   _removeRecipe(e) {
     const id = e.detail;
-    console.log(id);
     this.recipesList = this.recipesList.filter((recipe) => recipe.id !== id);
     M.toast({ html: "Removed Recipe", classes: "rounded" });
   }
